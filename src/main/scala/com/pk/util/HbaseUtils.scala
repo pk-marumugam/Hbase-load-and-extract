@@ -1,4 +1,4 @@
-package com.util
+package com.pk.util
 
 import com.typesafe.config.Config
 import org.apache.hadoop.conf.Configuration

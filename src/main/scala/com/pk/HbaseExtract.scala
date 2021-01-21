@@ -3,7 +3,7 @@ package com.pk
 import java.io.File
 
 import com.typesafe.config.ConfigFactory
-import com.util.HbaseUtils.getHbaseConfiguration
+import com.pk.util.HbaseUtils.getHbaseConfiguration
 import org.apache.hadoop.hbase.TableName
 import org.apache.hadoop.hbase.client.{Result, Scan}
 import org.apache.hadoop.hbase.spark.HBaseContext

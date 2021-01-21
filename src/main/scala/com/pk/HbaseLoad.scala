@@ -3,7 +3,7 @@ package com.pk
 import java.io.File
 
 import com.typesafe.config.{Config, ConfigFactory}
-import com.util.HbaseUtils._
+import com.pk.util.HbaseUtils._
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.hbase.client.Put
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable
