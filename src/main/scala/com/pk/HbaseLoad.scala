@@ -13,7 +13,9 @@ import org.apache.hadoop.io.Text
 import org.apache.spark.sql.{Row, SparkSession}
 
 import scala.collection.JavaConverters._
-
+/*
+Inital Creation Jan-18-2021
+ */
 object HbaseLoad {
 
   def getHJobConf(config: Config): Configuration = {

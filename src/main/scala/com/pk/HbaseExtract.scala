@@ -12,7 +12,9 @@ import org.apache.spark.sql.types.{StringType, StructField, StructType}
 import org.apache.spark.sql.{Row, SparkSession}
 
 import scala.collection.JavaConverters._
-
+/*
+Inital Creation Jan-19-2021
+*/
 object HbaseExtract {
 
   def main(args: Array[String]) {
