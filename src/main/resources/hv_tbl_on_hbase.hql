@@ -1,4 +1,4 @@
---Creates a external hive table on existing Hbase table orders.
+--Creates an external hive table on existing Hbase table orders_load.
 CREATE EXTERNAL TABLE hif.orders(
 rowkey string,
 `order_id` string,

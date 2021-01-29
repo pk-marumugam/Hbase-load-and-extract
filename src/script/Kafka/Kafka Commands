@@ -1,0 +1,21 @@
+
+#Create and manage kafka topics
+kafka-topics --zookeeper quickstart.cloudera:2181 --create --topic 'sample_topic' --partitions 1 --replication-factor 1
+kafka-topics --zookeeper quickstart.cloudera:2181 --list
+kafka-topics --zookeeper quickstart.cloudera:2181 --delete --topic sample_topic
+kafka-topics --zookeeper quickstart.cloudera:2181 --describe --topic sample_topic
+
+#Consumer to receive the messages
+kafka-console-consumer --zookeeper quickstart.cloudera:2181 --topic 'sample_topic' --from-beginning
+
+#producer to produce messages
+kafka-console-producer --broker-list quickstart.cloudera:9092 --topic sample_topic < 'hello'
+
+# Reference Sites
+https://kafka-python.readthedocs.io/en/master/apidoc/KafkaConsumer.html
+https://github.com/python-happybase/happybase/blob/master/doc/user.rst
+https://medium.com/better-programming/test-your-kafka-cluster-with-python-5acaff78f5b3
+https://medium.com/@jampttws/streaming-twitter-data-to-kafka-producer-and-publish-in-hbase-3d59ff9dcfaf
+https://github.com/jampttws/twitter-kafka-hbase/blob/master/kafka_consumer_hbase.ipynb
+https://medium.com/@mukeshkumar_46704/consume-json-messages-from-kafka-using-kafka-pythons-deserializer-859f5d39e02c
+https://github.com/Shubhamgorde/kafka-python-app/blob/master/producer/transaction-data.csv
